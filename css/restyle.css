@@ -1,0 +1,67 @@
+/* all */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 1500px;
+    height: auto;
+}
+
+body {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ebebeb;
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+main {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1000px;
+}
+
+p {
+    color: #303030;
+    line-height: 2;
+}
+
+a {
+    color: #303030;
+    line-height: 2;
+}
+
+strong {
+    line-height: 2;
+}
+
+h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /* padding-top: 300px; */
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+ul {
+    color: #303030;
+}
+
+ul li {
+    list-style: none;
+    color: #303030;
+}
+
+section {
+    margin-bottom: 60px;
+}

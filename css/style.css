@@ -1,0 +1,106 @@
+* {
+    /* 全般設定 */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* 余白 */
+    margin: 0 auto;
+    background-color: #ebebeb;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    /* background-image: ; */
+}
+
+h1 {
+    /* 余白 */
+    padding: 0;
+    margin: 0;
+}
+
+/* ヘッダー */
+.header {
+    /* 大きさ */
+    align-items: center;
+    background-color: #303030;
+    color: #ebebeb;
+}
+
+.title {
+    /* 余白 */
+    padding-top: 20px;
+}
+
+.explan {
+    /* 余白 */
+    padding-bottom: 20px
+}
+
+.biglink {
+    color: #d9333f;
+    text-decoration: none;
+}
+
+.main {
+    /* 余白 */
+    margin: 100px;
+}
+
+/* プロフィールセクション */
+
+/* リンクセクション */
+.links {
+    font-weight: bold;
+    color: #d9333f;
+    text-decoration: none;
+}
+
+.twitter {
+    /* 余白 */
+    margin-top: 50px;
+}
+
+.opinion {
+    /* 余白 */
+    margin-top: 50px;
+}
+
+.youtube {
+    /* 余白 */
+    margin-top: 50px;
+}
+
+.twitch {
+    /* 余白 */
+    margin-top: 50px;
+}
+
+.wishlist {
+    /* 余白 */
+    margin-top: 50px;
+}
+
+/* フッター */
+.footer {
+    /* 大きさ */
+    width: 100%;
+    height: 70px;
+    /* 位置指定 */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #303030;
+    color: #ebebeb;
+    text-align: center;
+    margin: 0 auto;
+}
