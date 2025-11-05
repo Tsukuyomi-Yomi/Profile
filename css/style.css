@@ -30,7 +30,8 @@ h1 {
 
 /* ヘッダー */
 .header {
-    /* 大きさ */
+    display: flex;
+    justify-content: space-around;
     align-items: center;
     background-color: #303030;
     color: #ebebeb;
@@ -39,10 +40,12 @@ h1 {
 .title {
     /* 余白 */
     padding-top: 20px;
+    padding-bottom: 20px
 }
 
 .explan {
     /* 余白 */
+    padding-top: 20px;
     padding-bottom: 20px
 }
 
@@ -120,7 +123,6 @@ h1 {
     /* 余白 */
     margin-top: 50px;
     margin-left: 50px;
-
     width: 300px;
 }
 
@@ -155,6 +157,10 @@ h1 {
 }
 
 @media screen and (max-width: 700px) {
+    .header {
+        display: block;
+    }
+
     .profile-flex {
         display: block;
     }
