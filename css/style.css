@@ -119,6 +119,13 @@ h1 {
     width: 300px;
 }
 
+.discord {
+    /* 余白 */
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 300px;
+}
+
 .wishlist {
     /* 余白 */
     margin-top: 50px;
