@@ -69,6 +69,10 @@ h1 {
     padding-left: 20px;
 }
 
+.profile-text {
+    font-size: 20px;
+}
+
 /* リンクセクション */
 .links {
     padding-left: 10px;
@@ -80,7 +84,6 @@ h1 {
 .link-flex {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-around; */
 }
 
 .sect-title {
@@ -89,6 +92,7 @@ h1 {
 
 .sect-desc {
     margin-top: 10px;
+    font-size: 20px;
 }
 
 .twitter {
