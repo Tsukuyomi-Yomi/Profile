@@ -133,9 +133,20 @@ h1 {
     width: 300px;
 }
 
+.links {
+    font-size: 20px;
+    transition: font-size 0.3s ease;
+}
+
+.links:hover {
+    font-size: 25px;
+}
+
 .empty-flex {
     width: 300px;
 }
+
+
 
 .empty {
     /* 余白 */
@@ -256,4 +267,10 @@ h1 {
     color: #ebebeb;
     text-decoration: none;
     display: block;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #d9333f;
 }
