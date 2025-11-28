@@ -24,16 +24,12 @@ h1 {
     margin: 0;
 }
 
-
-
-
-
 /* ヘッダー */
 .header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #303030;
+    background-color: #333;
     color: #ebebeb;
 }
 
@@ -69,6 +65,14 @@ h1 {
     height: auto;
 }
 
+.profile-sect {
+    padding-left: 20px;
+}
+
+.profile-text {
+    font-size: 20px;
+}
+
 /* リンクセクション */
 .links {
     padding-left: 10px;
@@ -80,7 +84,6 @@ h1 {
 .link-flex {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-around; */
 }
 
 .sect-title {
@@ -89,6 +92,7 @@ h1 {
 
 .sect-desc {
     margin-top: 10px;
+    font-size: 20px;
 }
 
 .twitter {
@@ -133,9 +137,20 @@ h1 {
     width: 300px;
 }
 
+.links {
+    font-size: 20px;
+    transition: font-size 0.3s ease;
+}
+
+.links:hover {
+    font-size: 25px;
+}
+
 .empty-flex {
     width: 300px;
 }
+
+
 
 .empty {
     /* 余白 */
@@ -157,12 +172,13 @@ h1 {
     position: fixed;
     left: 0;
     bottom: 0;
-    background-color: #303030;
+    background-color: #333;
     color: #ebebeb;
     text-align: center;
     margin: 0 auto;
 }
 
+/* スマホ用設定 */
 @media screen and (max-width: 700px) {
     .header {
         display: block;
@@ -179,4 +195,86 @@ h1 {
     .empty-flex {
         display: none;
     }
+
+
+
+}
+
+/* メニューのスタイル */
+.menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    /* 初期状態では画面の外に隠れている */
+    width: 300px;
+    height: 100%;
+    background-color: #333;
+    color: #333;
+    opacity: 0.95;
+    transition: right 0.3s ease;
+    /* スライドインのアニメーション */
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+/* メニューが開いているとき */
+.menu.open {
+    right: 0;
+}
+
+/* ボタンのスタイル */
+.hamburger {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #d9333f;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+/* バツ印に変化するスタイル */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* メニューリストのスタイル */
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 80px;
+}
+
+.menu li {
+    padding: 20px 0;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.menu li a {
+    color: #ebebeb;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #d9333f;
 }
