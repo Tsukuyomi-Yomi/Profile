@@ -150,13 +150,43 @@ h1 {
     width: 300px;
 }
 
-
-
 .empty {
     /* 余白 */
     margin-top: 50px;
     height: 70px;
 }
+
+/* 画面ロード時 */
+
+.loader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #ebebeb;
+    z-index: 555;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt {
+    font-size: 45px;
+    font-weight: bold;
+    color: #d9333f;
+
+    font-family: "Science Gothic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "wdth" 100,
+        "CTRS" 0;
+
+}
+
 
 /* フッター */
 .footer {
@@ -209,6 +239,7 @@ nav ul li {
         display: block;
     }
 
+    /* メニューのスタイル */
     .menu {
         position: fixed;
         top: 0;
@@ -289,5 +320,3 @@ nav ul li {
     }
 
 }
-
-/* メニューのスタイル */
