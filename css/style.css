@@ -102,6 +102,13 @@ h1 {
     width: 300px;
 }
 
+.circle {
+    /* 余白 */
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 300px;
+}
+
 .opinion {
     /* 余白 */
     margin-top: 50px;
