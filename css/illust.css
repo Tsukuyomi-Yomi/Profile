@@ -1,0 +1,115 @@
+* {
+    /* 全般設定 */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* 余白 */
+    margin: 0 auto;
+    background-color: #ebebeb;
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+h1 {
+    /* 余白 */
+    padding: 0;
+    margin: 0;
+}
+
+ol {
+    list-style: decimal;
+}
+
+ol li {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+
+}
+
+/* ヘッダー */
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    color: #ebebeb;
+}
+
+.title {
+    /* 余白 */
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+
+.explan {
+    /* 余白 */
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+
+.biglink {
+    color: #d9333f;
+    text-decoration: none;
+}
+
+.main {
+    /* 余白 */
+    margin: 50px;
+}
+
+/* img */
+
+img {
+    width: 100%;
+}
+
+.illust-content {
+    margin-bottom: 100px;
+}
+
+.empty {
+    /* 余白 */
+    margin-top: 50px;
+    height: 70px;
+}
+
+/* フッター */
+.footer {
+    /* 大きさ */
+    width: 100%;
+    height: 70px;
+    /* 位置指定 */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #333;
+    color: #ebebeb;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* スマホ用設定 */
+@media screen and (max-width: 700px) {
+    .header {
+        display: block;
+    }
+
+    .footer {
+        display: block;
+    }
+
+    .copyright {
+        padding-top: 10px;
+    }
+}
