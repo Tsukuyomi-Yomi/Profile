@@ -69,6 +69,7 @@ ol li {
 
 img {
     width: 100%;
+    max-width: 300px;
 }
 
 .illust-content {
@@ -79,6 +80,28 @@ img {
     /* 余白 */
     margin-top: 50px;
     height: 70px;
+}
+
+.illust-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: top; */
+}
+
+.illust-items {
+    width: 30%;
+    height: max-content;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.illust-desc {
+    height: 100px;
+}
+
+.illust-img {
+    margin-top: 30px;
 }
 
 /* フッター */
@@ -112,4 +135,17 @@ img {
     .copyright {
         padding-top: 10px;
     }
+
+    .illust-flex {
+        flex-wrap: wrap;
+    }
+
+    .illust-items {
+        width: 75%;
+    }
+
+    .illust-desc {
+        height: 100px;
+    }
+
 }
