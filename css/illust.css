@@ -41,6 +41,11 @@ ol li {
     align-items: center;
     background-color: #333;
     color: #ebebeb;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .title {
@@ -76,11 +81,7 @@ img {
     margin-bottom: 100px;
 }
 
-.empty {
-    /* 余白 */
-    margin-top: 50px;
-    height: 70px;
-}
+
 
 .illust-flex {
     display: flex;
@@ -101,6 +102,12 @@ img {
 
 .illust-img {
     margin-top: 30px;
+}
+
+.empty {
+    /* 余白 */
+    margin-top: 50px;
+    height: 70px;
 }
 
 /* フッター */
@@ -192,7 +199,7 @@ body {
 
 .menu li {
     padding: 20px 0;
-    border-bottom: 1px solid #444;
+    border-bottom: 1px solid #333;
 }
 
 .menu li a {
@@ -243,6 +250,10 @@ body {
 
     .copyright {
         padding-top: 10px;
+    }
+
+    .empty {
+        height: 140px;
     }
 
     .illust-flex {

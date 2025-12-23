@@ -24,12 +24,14 @@ h1 {
 }
 
 /* ヘッダー */
+
 .header {
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #333;
     color: #ebebeb;
+    width: 100%;
 }
 
 .title {
@@ -68,11 +70,16 @@ h1 {
 /* プロフィールセクション */
 .profile-flex {
     display: flex;
+    justify-content: space-around;
 }
 
 .profile-icon {
-    width: 200px;
-    height: auto;
+    width: 25%;
+    height: 25%;
+}
+
+.profile-flex-item {
+    width: 60%;
 }
 
 .profile-sect {
@@ -99,6 +106,7 @@ h1 {
 .link-flex {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .sect-title {
@@ -178,6 +186,25 @@ h1 {
     height: 70px;
 }
 
+
+/* メニューリストのスタイル */
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 80px;
+}
+
+.menu li {
+    padding: 20px 0;
+    border-bottom: 1px solid #333;
+}
+
+.menu li a {
+    color: #ebebeb;
+    text-decoration: none;
+    display: block;
+}
+
 /* 画面ロード時 */
 
 .loader {
@@ -252,6 +279,10 @@ nav ul li {
         padding-top: 10px;
     }
 
+    .empty {
+        height: 140px;
+    }
+
     .profile-flex {
         display: block;
     }
@@ -262,6 +293,11 @@ nav ul li {
 
     .empty-flex {
         display: none;
+    }
+
+    .profile-icon {
+        width: 50%;
+        height: 50%
     }
 
     nav ul li {
