@@ -15,6 +15,6 @@ $(function () {
     $(window).on('load', function () {
         setTimeout(function () {
             end_loader();
-        }, 3000)
+        }, 2000)
     })
 });
