@@ -31,7 +31,11 @@ h1 {
     align-items: center;
     background-color: #333;
     color: #ebebeb;
+    position: fixed;
+    left: 0;
+    top: 0;
     width: 100%;
+    margin: 0 auto;
 }
 
 .title {
@@ -74,8 +78,8 @@ h1 {
 }
 
 .profile-icon {
-    width: 25%;
-    height: 25%;
+    width: 30%;
+    height: 30%;
 }
 
 .profile-flex-item {
@@ -106,7 +110,8 @@ h1 {
 .link-flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: left;
+
 }
 
 .sect-title {
@@ -186,6 +191,18 @@ h1 {
     height: 70px;
 }
 
+/* バツ印に変化するスタイル */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
 
 /* メニューリストのスタイル */
 .menu ul {
@@ -196,7 +213,7 @@ h1 {
 
 .menu li {
     padding: 20px 0;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #ebebeb;
 }
 
 .menu li a {
@@ -368,7 +385,7 @@ nav ul li {
     }
 
     .menu li {
-        padding: 20px 0;
+        padding: 1.2em 0;
         border-bottom: 1px solid #ebebeb;
     }
 
@@ -376,7 +393,7 @@ nav ul li {
         color: #ebebeb;
         text-decoration: none;
         display: block;
-        font-size: 20px;
+        font-size: 1.2em;
         transition: color 0.3s ease;
     }
 
