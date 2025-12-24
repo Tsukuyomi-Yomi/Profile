@@ -84,7 +84,7 @@ img {
 .illust-flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .illust-items {
@@ -102,20 +102,42 @@ img {
     margin-top: 30px;
 }
 
+.illust-toplink {
+    display: block;
+    margin: 30px 30px;
+    font-size: 1.5em;
+    color: #d9333f;
+    text-align: center;
+}
+
+.illust-backlink {
+    display: block;
+    margin: 30px 30px;
+    font-size: 1.5em;
+    color: #d9333f;
+    text-align: center;
+}
+
+.illust-bottomlink {
+    display: block;
+    margin: 30px 30px;
+    font-size: 1.5em;
+    color: #d9333f;
+    text-align: center;
+}
+
 .empty {
     /* 余白 */
     margin-top: 50px;
     height: 70px;
 }
 
-
-
 /* nav */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    background-color: #ebebeb;
 }
 
 /* メニューのスタイル */
@@ -238,7 +260,6 @@ body {
     margin: 0 auto;
 }
 
-
 /* ハンバーガーメニュー */
 .hamburger {
     display: none;
@@ -246,6 +267,11 @@ body {
 
 nav ul li {
     display: none;
+}
+
+.link-flex {
+    display: flex;
+    justify-content: center;
 }
 
 /* スマホ用設定 */
@@ -362,4 +388,7 @@ nav ul li {
         color: #d9333f;
     }
 
+    .link-flex {
+        display: block;
+    }
 }
