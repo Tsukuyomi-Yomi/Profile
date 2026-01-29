@@ -1,0 +1,405 @@
+* {
+    /* 全般設定 */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* 余白 */
+    margin: 0 auto;
+    background-color: #ebebeb;
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+h1 {
+    /* 余白 */
+    padding: 0;
+    margin: 0;
+}
+
+/* ヘッダー */
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+    color: #ebebeb;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.title {
+    /* 余白 */
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+
+.explan {
+    /* 余白 */
+    padding-top: 20px;
+    padding-bottom: 20px
+}
+
+.biglink {
+    color: #d9333f;
+    text-decoration: none;
+}
+
+.main {
+    /* 余白 */
+    margin: 50px;
+}
+
+/* イラストセクション */
+
+.illust-sect {
+    margin: 50px 0;
+    margin-left: 20px;
+}
+
+.illust-desc {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* プロフィールセクション */
+.profile-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.profile-icon {
+    width: 30%;
+    height: 30%;
+}
+
+.profile-flex-item {
+    width: 60%;
+}
+
+.profile-sect {
+    padding-left: 20px;
+}
+
+.profile-text {
+    font-size: 1.2em;
+}
+
+.profile-desc {
+    list-style-type: circle;
+    padding-left: 20px;
+    font-size: 1.2em;
+}
+
+/* リンクセクション */
+.links {
+    padding-left: 10px;
+    font-weight: bold;
+    color: #d9333f;
+}
+
+.link-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+
+}
+
+.sect-title {
+    margin-bottom: 10px;
+}
+
+.sect-desc {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.twitter {
+    /* 余白 */
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 300px;
+}
+
+.circle {
+    /* 余白 */
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 300px;
+}
+
+.opinion {
+    /* 余白 */
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 300px;
+}
+
+.youtube {
+    /* 余白 */
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 300px;
+}
+
+.twitch {
+    /* 余白 */
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 300px;
+}
+
+.discord {
+    /* 余白 */
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 300px;
+}
+
+.wishlist {
+    /* 余白 */
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 300px;
+}
+
+.links {
+    font-size: 1.2em;
+    transition: font-size 0.3s ease;
+}
+
+.links:hover {
+    font-size: 1.3em
+}
+
+.empty-flex {
+    width: 300px;
+}
+
+.empty {
+    /* 余白 */
+    margin-top: 50px;
+    height: 70px;
+}
+
+/* バツ印に変化するスタイル */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* メニューリストのスタイル */
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 80px;
+}
+
+.menu li {
+    padding: 20px 0;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.menu li a {
+    color: #ebebeb;
+    text-decoration: none;
+    display: block;
+}
+
+/* 画面ロード時 */
+
+.loader {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #ebebeb;
+    z-index: 555;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt {
+    font-size: 45px;
+    font-weight: bold;
+    color: #d9333f;
+
+    font-family: "Science Gothic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "wdth" 100,
+        "CTRS" 0;
+}
+
+
+/* フッター */
+.footer {
+    /* 大きさ */
+    width: 100%;
+    height: 70px;
+    /* 位置指定 */
+    display: flex;
+
+    align-items: center;
+    justify-content: space-around;
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #333;
+    color: #ebebeb;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* ハンバーガーメニュー */
+.hamburger {
+    display: none;
+}
+
+nav ul li {
+    display: none;
+}
+
+/* スマホ用設定 */
+@media screen and (max-width: 700px) {
+    .header {
+        display: block;
+    }
+
+    .footer {
+        display: block;
+    }
+
+    .copyright {
+        padding-top: 10px;
+    }
+
+    .empty {
+        height: 140px;
+    }
+
+    .profile-flex {
+        display: block;
+    }
+
+    .link-flex {
+        display: block;
+    }
+
+    .empty-flex {
+        display: none;
+    }
+
+    .profile-icon {
+        width: 50%;
+        height: 50%
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    /* メニューのスタイル */
+    .menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        /* 初期状態では画面の外に隠れている */
+        width: 300px;
+        height: 100%;
+        background-color: #333;
+        color: #333;
+        opacity: 0.95;
+        transition: right 0.3s ease;
+        /* スライドインのアニメーション */
+        padding: 20px;
+        box-sizing: border-box;
+        z-index: 10;
+    }
+
+    /* メニューが開いているとき */
+    .menu.open {
+        right: 0;
+    }
+
+    /* ボタンのスタイル */
+    .hamburger {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 30px;
+        cursor: pointer;
+        z-index: 20;
+    }
+
+    .hamburger span {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: #d9333f;
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+
+    /* バツ印に変化するスタイル */
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+
+    /* メニューリストのスタイル */
+    .menu ul {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 80px;
+    }
+
+    .menu li {
+        padding: 1.2em 0;
+        border-bottom: 1px solid #ebebeb;
+    }
+
+    .menu li a {
+        color: #ebebeb;
+        text-decoration: none;
+        display: block;
+        font-size: 1.2em;
+        transition: color 0.3s ease;
+    }
+
+    .menu li a:hover {
+        color: #d9333f;
+    }
+
+}
