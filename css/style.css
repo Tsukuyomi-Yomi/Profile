@@ -96,6 +96,7 @@ h1 {
 }
 
 .profile-desc {
+    padding-top: 10px;
     list-style-type: circle;
     padding-left: 20px;
     font-size: 1.2em;
